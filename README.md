@@ -1,4 +1,4 @@
-# Life_At_University
+# Life At University
 Android app for student and teacher can manage schedule or some info in university
 
 ![26551247_1161556217321696_1708217394_n](https://user-images.githubusercontent.com/30035596/34569589-d4561b70-f19b-11e7-919e-089746d8635e.png)
