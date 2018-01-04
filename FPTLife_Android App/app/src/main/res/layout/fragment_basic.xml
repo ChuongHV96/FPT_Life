@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="prm3101.group_assignment.fragment.BasicFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+        <!--android:elevation="6dp"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+        <!--app:tabSelectedTextColor="@color/black"-->
+        <!--app:tabTextColor="@color/black"/>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_below="@id/tabs"-->
+        <!--android:background="@color/new_bg"/>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/new_bg"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_add_new_document"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Classroom extends Model
+{
+    //
+    // protected $fillable = ['name', 'description', 'task_date'];
+    protected $table = 'classroom';
+    public $timestamps = false;
+}
+

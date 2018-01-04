@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/dialog_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Login Fail"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/dialog_info_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_info"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="Wrong username or password. Please try again"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_info_2"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_line"/>
+
+    <Button
+        android:id="@+id/dialog_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_weight="0.50"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        android:background="@color/white"
+        android:text="Ok"/>
+
+</RelativeLayout>

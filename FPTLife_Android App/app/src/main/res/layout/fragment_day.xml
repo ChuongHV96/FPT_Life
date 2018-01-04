@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="aaaaaaa"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/todaySchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/today"
+        android:layout_margin="13dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tomorrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/todaySchedule"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="aaaaaaa"/>
+
+    <TextView
+        android:id="@+id/subjectsInTommorrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/tomorrow"
+        android:background="@drawable/circle_textview"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0\n Tasks due"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/tomorrow"
+        android:layout_toRightOf="@+id/subjectsInTommorrow"
+        android:background="@drawable/circle_textview_v2"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/exams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0\n Exams"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/tomorrow"
+        android:layout_toRightOf="@+id/tasks"
+        android:background="@drawable/circle_textview_v2"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+</RelativeLayout>
+
+
+

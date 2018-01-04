@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="prm3101.group_assignment.activity.DetailTaskActivity">
+
+    <include
+        android:id="@+id/nav_action"
+        layout="@layout/toolbar_subject"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"/>
+
+    <ImageView
+        android:id="@+id/startTimeIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/nav_action"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_calendar_with_spring_binder_and_date_blocks"/>
+
+    <TextView
+        android:id="@+id/dueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_action"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/startTimeIcon"
+        android:text="22222222"
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+
+
+    <ImageView
+        android:id="@+id/roomIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/dueDate"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_loading_mark"/>
+
+    <TextView
+        android:id="@+id/room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dueDate"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/roomIcon"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/roomIcon"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey_line"/>
+
+    <TextView
+        android:id="@+id/weeklyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Description"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weeklyTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Detail"
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/detail"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey_line"/>
+
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Due for class"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/className"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Class name"
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+
+</RelativeLayout>
